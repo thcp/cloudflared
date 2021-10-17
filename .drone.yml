@@ -2,7 +2,7 @@ pipeline:
   build:
     image: curlimages/curl
     commands:
-      - chmod +x runner.sh  ; ./runner.sh download
+      - bash runner.sh download
   publish:
     image: plugins/docker
     repo: thclpr/cloudflared
